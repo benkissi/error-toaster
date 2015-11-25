@@ -13,10 +13,10 @@ displays them. This is how to use it "Error.throw()".Here is an example:
     Meteor.call('accountsInsert', account, function(error, result) {
 		// display the error to the user and abort
 		if (error)
-			return **Error.throw(error.reason);**
+			return Error.throw(error.reason);
 
 		if (result.accountExists)
-			**Error.throw('This account number has already been created');**
+			Error.throw('This account number has already been created');
 
 		Router.go('accountPage', {_id: result._id});
 	});
