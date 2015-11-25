@@ -1,11 +1,11 @@
-##Description
+## Description
 Error-Toaster presents a nice way to display error prompts to users.
 It shows user caused errors such as omissions.
 
-##Installation
+## Installation
 meteor add benkissi:error-toaster
 
-##Usage
+## Usage
 The package provides a function throw(), which catches errors and
 displays them. This is how to use it "Error.throw()".Here is an example:
 
@@ -23,7 +23,7 @@ displays them. This is how to use it "Error.throw()".Here is an example:
 
 ```
 
-##Contribution
+## Contribution
 You can contribute to this package [here](https://github.com/benkissi/error-toaster/blob/master/packages/error-toaster/README.md).
 
 
