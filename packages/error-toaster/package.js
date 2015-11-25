@@ -1,6 +1,6 @@
 Package.describe({
-  name: 'benkissi:errors',
-  version: '0.0.1',
+  name: 'benkissi:error-toaster',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Display errors to the user in a cool way',
   // URL to the Git repository containing the source code for this package.
@@ -21,6 +21,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('benkissi:errors');
+  api.use('benkissi:error-toaster');
   api.addFiles('errors-tests.js');
 });

@@ -6,6 +6,16 @@ It shows user caused errors such as omissions.
 meteor add benkissi:error-toaster
 
 ## Usage
+First you have to add package helper in your application layout like this:
+```
+<template name="layout">
+    <div class="yield">
+        {{> meteorErrors}}
+        {{>yield}}
+    </div>
+</template>
+
+```
 The package provides a function throw(), which catches errors and
 displays them. This is how to use it "Error.throw()".Here is an example:
 
